@@ -10,7 +10,6 @@ A full-stack application that allows users to upload images directly to AWS S3 u
 
 * Next.js (React)
 * Tailwind CSS
-* Axios
 
 ### 🔹 Backend
 
@@ -27,15 +26,15 @@ A full-stack application that allows users to upload images directly to AWS S3 u
 project-root/
 │
 ├── backend/
-│   ├── app/
-│   │   ├── main.py
-│   │   ├── core/
-│   │   ├── db/
-│   │   ├── models/
-│   │   ├── schemas/
-│   │   ├── services/
-│   │   ├── routers/
-│   │   └── utils/
+│   ├
+│   │── main.py
+│   │── core/
+│   │── db/
+│   │── models/
+│   │── schemas/
+│   │── services/
+│   │── routers/
+│   │── utils/
 │   ├── requirements.txt
 │   └── .env
 │
@@ -65,7 +64,7 @@ cd backend
 ```bash
 python -m venv venv
 source venv/bin/activate      # Mac/Linux
-venv\Scripts\activate         # Windows
+.venv/Scripts/activate         # Windows
 ```
 
 ---
@@ -96,7 +95,7 @@ DATABASE_URL=sqlite:///./test.db
 ## 5️⃣ Run Backend Server
 
 ```bash
-uvicorn app.main:app --reload
+uvicorn main:app --reload
 ```
 
 👉 Backend URL:
@@ -112,7 +111,7 @@ http://127.0.0.1:8000/docs
 ## 1️⃣ Navigate to Frontend
 
 ```bash
-cd my-app
+cd frontend
 ```
 
 ---
